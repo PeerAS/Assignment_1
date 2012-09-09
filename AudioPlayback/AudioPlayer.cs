@@ -7,7 +7,7 @@ namespace AudioPlayback
 {
     public class AudioPlayer : AudioPlayerAgent
     {
-        static int currentTrack = 0;
+        static int currentTrack = 1;
 
         private static volatile bool _classInitialized;
 

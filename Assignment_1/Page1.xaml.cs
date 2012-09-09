@@ -24,11 +24,9 @@ namespace Assignment_1
             BackgroundAudioPlayer.Instance.PlayStateChanged += new EventHandler(Instance_PlayStateChanged);
         }
 
-        private void SendData_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
-
+        #region AudioFunctions
+        
         private void PlaySong_Click(object sender, RoutedEventArgs e)
         {
             if (PlayState.Playing == BackgroundAudioPlayer.Instance.PlayerState)    //if the song is playing pause it
@@ -57,6 +55,13 @@ namespace Assignment_1
                 case PlayState.Stopped:
                     PlaySong.Content = "Play Song"; break;
             }
+
+        }
+
+        #endregion
+        
+        private void SendData_Click(object sender, RoutedEventArgs e)
+        {
 
         }
     }
