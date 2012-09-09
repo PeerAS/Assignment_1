@@ -28,3 +28,5 @@ C:\Users\Peer Andreas\Dropbox\Assignment_1\Assignment_1\obj\Debug\Assignment_1.g
 C:\Users\Peer Andreas\Dropbox\Assignment_1\Assignment_1\obj\Debug\Assignment_1.dll
 C:\Users\Peer Andreas\Dropbox\Assignment_1\Assignment_1\obj\Debug\Assignment_1.pdb
 C:\Users\Peer Andreas\Dropbox\Assignment_1\Assignment_1\obj\Debug\XapCacheFile.xml
+D:\Mobile programming\Assignment_1\Assignment_1\Bin\Debug\AudioPlayback.dll
+D:\Mobile programming\Assignment_1\Assignment_1\Bin\Debug\AudioPlayback.pdb

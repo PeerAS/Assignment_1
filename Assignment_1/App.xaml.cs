@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.IsolatedStorage;
 using System.Linq;
 using System.Net;
 using System.Windows;
@@ -9,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Navigation;
+using System.Windows.Resources;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
@@ -36,7 +38,9 @@ namespace Assignment_1
 
             // Phone-specific initialization
             InitializePhoneApplication();
-
+            
+            CopyToIsolatedStorage();
+            
             // Show graphics profiling information while debugging.
             if (System.Diagnostics.Debugger.IsAttached)
             {
@@ -56,6 +60,8 @@ namespace Assignment_1
                 // and consume battery power when the user is not using the phone.
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
+
+            
 
         }
 
@@ -142,5 +148,33 @@ namespace Assignment_1
         }
 
         #endregion
+        
+        private void CopyToIsolatedStorage()
+        {
+            using (IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForApplication())
+            {
+                string[] files = new string[] { "Gangnam Style.mp3" };
+
+                foreach(var _filename in files)
+                    if (!storage.FileExists(_filename))
+                    {
+                        string _filePath = "Assets/" + _filename;
+                        StreamResourceInfo resource = Application.GetResourceStream(new Uri(_filePath, UriKind.Relative));
+
+                        using (IsolatedStorageFileStream file = storage.CreateFile(_filename))
+                        {
+                            int chunkSize = 4096;
+                            byte[] bytes = new byte[chunkSize];
+                            int byteCount;
+
+                            while ((byteCount = resource.Stream.Read(bytes, 0, chunkSize)) > 0)
+                            {
+                                file.Write(bytes, 0, byteCount);
+                            }
+                        }
+
+                    }
+            }
+        }
     }
 }

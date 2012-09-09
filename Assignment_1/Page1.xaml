@@ -32,8 +32,8 @@
                 <RowDefinition Height=".8*"/>
                 <RowDefinition Height=".2*"/>
             </Grid.RowDefinitions>
-            <Button Content="Send Data" Name="SendData" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Click="SendData_Click" />
-            <Button Content="Play Song" Name="PlaySong" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="144,197,150,217" />
+            <Button Content="Send Data" x:Name="SendData" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Click="SendData_Click" />
+            <Button Content="Play Song" x:Name="PlaySong" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="144,24,150,390" Click="PlaySong_Click" />
         </Grid>
     </Grid>
  
