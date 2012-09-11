@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
@@ -59,10 +61,35 @@ namespace Assignment_1
         }
 
         #endregion
-        
+
+        #region WebRequest
+       
         private void SendData_Click(object sender, RoutedEventArgs e)
         {
+            HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(new Uri("http://www.gtl.hig.no/mobile/logging.php", UriKind.Absolute)); //declares a webrequest to the specified URL
 
+            webRequest.Method = "POST"; //using POST
+            webRequest.ContentType = "application/x-www-form-urlencoded"; //what type of POST
+
+            webRequest.BeginGetRequestStream(new AsyncCallback(GetRequestStreamCallback), webRequest); //makes an asynchronous call to the page
+        
         }
+
+        void GetRequestStreamCallback(IAsyncResult asyncResult)
+        {
+            HttpWebRequest webRequest = (HttpWebRequest)asyncResult.AsyncState;
+
+            Stream postStream = webRequest.EndGetRequestStream(asyncResult);
+
+            string data = "name=Peer&data=1";
+            byte[] bytes = Encoding.UTF8.GetBytes(data);
+
+            postStream.Write(bytes, 0, bytes.Length);
+            postStream.Close();
+        }
+
+       
+
+        #endregion
     }
 }

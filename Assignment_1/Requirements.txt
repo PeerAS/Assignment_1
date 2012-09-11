@@ -1,4 +1,4 @@
-﻿- Splash activity, button push, play song
+﻿- Splash activity, button push, play song (Almost done)
 - Two different UI view layout types (Done)
 - Send data
 - Retrieve two types of data from the web(text, and something else)
@@ -6,4 +6,4 @@
 - Signed by me
 - Icon for app
 
-//http://channel9.msdn.com/blogs/mtaulty/silverlight-using-httpwebrequest
+//http://channel9.msdn.com/blogs/mtaulty/silverlight-using-httpwebrequest\
