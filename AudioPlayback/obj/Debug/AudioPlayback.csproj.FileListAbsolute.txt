@@ -3,3 +3,7 @@ D:\Mobile programming\Assignment_1\AudioPlayback\Bin\Debug\AudioPlayback.pdb
 D:\Mobile programming\Assignment_1\AudioPlayback\obj\Debug\ResolveAssemblyReference.cache
 D:\Mobile programming\Assignment_1\AudioPlayback\obj\Debug\AudioPlayback.dll
 D:\Mobile programming\Assignment_1\AudioPlayback\obj\Debug\AudioPlayback.pdb
+C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\AudioPlayback\Bin\Debug\AudioPlayback.dll
+C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\AudioPlayback\Bin\Debug\AudioPlayback.pdb
+C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\AudioPlayback\obj\Debug\AudioPlayback.dll
+C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\AudioPlayback\obj\Debug\AudioPlayback.pdb

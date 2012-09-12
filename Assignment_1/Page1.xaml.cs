@@ -66,29 +66,42 @@ namespace Assignment_1
        
         private void SendData_Click(object sender, RoutedEventArgs e)
         {
-            HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(new Uri("http://www.gtl.hig.no/mobile/logging.php", UriKind.Absolute)); //declares a webrequest to the specified URL
+            WebClient upload = new WebClient();
+            upload.Headers["Content-Type"] = "text/javascript";
+            Uri address = new Uri("http://www.gtl.hig.no/mobile/logging.php?user=Peer&data=1", UriKind.Absolute);
+            upload.UploadStringAsync(address, "");
+            upload.UploadStringCompleted += new UploadStringCompletedEventHandler(upload_UploadStringCompleted);
+            //HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(new Uri("http://www.gtl.hig.no/mobile/logging.php", UriKind.Absolute)); //declares a webrequest to the specified URL
 
-            webRequest.Method = "POST"; //using POST
-            webRequest.ContentType = "application/x-www-form-urlencoded"; //what type of POST
+            //webRequest.Method = "POST"; //using POST
+            //webRequest.ContentType = "application/x-www-form-urlencoded"; //what type of POST
 
-            webRequest.BeginGetRequestStream(new AsyncCallback(GetRequestStreamCallback), webRequest); //makes an asynchronous call to the page
+            //webRequest.BeginGetRequestStream(new AsyncCallback(GetRequestStreamCallback), webRequest); //makes an asynchronous call to the page
         
+        }
+
+        void upload_UploadStringCompleted(object sender, UploadStringCompletedEventArgs e)
+        {
+            MessageBox.Show(e.Result);
         }
 
         void GetRequestStreamCallback(IAsyncResult asyncResult)
         {
-            HttpWebRequest webRequest = (HttpWebRequest)asyncResult.AsyncState;
+        //    HttpWebRequest webRequest = (HttpWebRequest)asyncResult.AsyncState;
 
-            Stream postStream = webRequest.EndGetRequestStream(asyncResult);
+        //    Stream postStream = webRequest.EndGetRequestStream(asyncResult);
 
-            string data = "name=Peer&data=1";
-            byte[] bytes = Encoding.UTF8.GetBytes(data);
+        //    string data = "?User=Peer";
+        //    byte[] bytes = Encoding.UTF8.GetBytes(data);
 
-            postStream.Write(bytes, 0, bytes.Length);
-            postStream.Close();
+        //    postStream.Write(bytes, 0, bytes.Length);
+        //    postStream.Close();
         }
 
-       
+        #endregion
+
+        #region Fetching data from web
+
 
         #endregion
     }
