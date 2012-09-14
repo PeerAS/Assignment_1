@@ -15,10 +15,14 @@ namespace Assignment_1
 {
     public partial class SendDataPage : PhoneApplicationPage
     {
+       
+
         public SendDataPage()
         {
             InitializeComponent();
+            
         }
+
 
         private void SendDataButton_Click(object sender, RoutedEventArgs e)
         {
@@ -33,16 +37,16 @@ namespace Assignment_1
             {   //creates a new webClient
                 WebClient upload = new WebClient();
                 upload.Headers["Content-Type"] = "text/javascript"; //sets the header used
-                Uri address = new Uri("http://www.gtl.hig.no/mobile/logging.php?user="+ user_input +"&data=" + data_input, UriKind.Absolute);
-                upload.UploadStringAsync(address, "");
-                upload.UploadStringCompleted += new UploadStringCompletedEventHandler(upload_UploadStringCompleted);
+                Uri address = new Uri("http://www.gtl.hig.no/mobile/logging.php?user="+ user_input +"&data=" + data_input, UriKind.Absolute); //sets the string to be used
+                upload.UploadStringAsync(address, ""); //uploads the string
+                upload.UploadStringCompleted += new UploadStringCompletedEventHandler(upload_UploadStringCompleted); //add an event for the completed upload
             }
         }
 
         void upload_UploadStringCompleted(object sender, UploadStringCompletedEventArgs e)
         {
             MessageBox.Show("The data has been sent");
-            UserInput.Text = "";
+            UserInput.Text = "";    //resets the text inputs
             DataInput.Text = "";
         }
     }

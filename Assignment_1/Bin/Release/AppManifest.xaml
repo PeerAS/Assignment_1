@@ -1,0 +1,6 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="Assignment_1" EntryPointType="Assignment_1.App" RuntimeVersion="4.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="Assignment_1" Source="Assignment_1.dll" />
+    <AssemblyPart x:Name="AudioPlayback" Source="AudioPlayback.dll" />
+  </Deployment.Parts>
+</Deployment>

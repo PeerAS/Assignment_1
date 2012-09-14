@@ -33,22 +33,10 @@
                 <RowDefinition Height=".2*"/>
             </Grid.RowDefinitions>
             <Button Content="Send Data" x:Name="SendData" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Click="SendData_Click" />
-            <Button Content="Play Song" x:Name="PlaySong" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="144,24,150,390" Click="PlaySong_Click" />
+            <Button Content="Play Song" x:Name="PlaySong" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="116,24,116,390" Click="PlaySong_Click" Width="224" />
             <Button Content="Download data" x:Name="Download" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Download_Click" />
-            <MediaElement x:Name="Song1" Source="Assets/Gangam Style.mp3" AutoPlay="True" />
         </Grid>
     </Grid>
  
-    <!--Sample code showing usage of ApplicationBar-->
-    <!--<phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-            </shell:ApplicationBar.MenuItems>
-        </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>-->
 
 </phone:PhoneApplicationPage>

@@ -7,7 +7,7 @@ namespace AudioPlayback
 {
     public class AudioPlayer : AudioPlayerAgent
     {
-        static int currentTrack = 1;
+        static int currentTrack = 0;
 
         private static volatile bool _classInitialized;
 
@@ -124,13 +124,10 @@ namespace AudioPlayback
             switch (action)
             {
                 case UserAction.Play:
-                    if (player.PlayerState != PlayState.Playing)
-                    {
-                        player.Play();
-                    }
+                    PlayTrack(player);
                     break;
                 case UserAction.Stop:
-                    player.Stop();
+                    PlayTrack(player);
                     break;
                 case UserAction.Pause:
                     player.Pause();

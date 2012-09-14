@@ -1,0 +1,4 @@
+C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\AudioPlayback\Bin\Release\AudioPlayback.dll
+C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\AudioPlayback\Bin\Release\AudioPlayback.pdb
+C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\AudioPlayback\obj\Release\AudioPlayback.dll
+C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\AudioPlayback\obj\Release\AudioPlayback.pdb

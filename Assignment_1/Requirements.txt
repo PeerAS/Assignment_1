@@ -3,7 +3,5 @@
 - Send data (Done)
 - Retrieve two types of data from the web(text, and something else) (DONE)
 - Display one image accessed from the HiG website (get for the frontpage) DONE!!!
-- Signed by me
-- Icon for app
-
-//http://channel9.msdn.com/blogs/mtaulty/silverlight-using-httpwebrequest\
+- Signed by me ???
+- Icon for app (Done)

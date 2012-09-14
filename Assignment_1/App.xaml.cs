@@ -150,7 +150,7 @@ namespace Assignment_1
         #endregion
         
         private void CopyToIsolatedStorage()
-        {
+        {   //copies the file to storage
             using (IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForApplication())
             {
                 string[] files = new string[] { "Gangnam Style.mp3" };
@@ -167,7 +167,7 @@ namespace Assignment_1
                             byte[] bytes = new byte[chunkSize];
                             int byteCount;
 
-                            while ((byteCount = resource.Stream.Read(bytes, 0, chunkSize)) > 0)
+                            while ((byteCount = resource.Stream.Read(bytes, 0, chunkSize)) > 0) //changes the resource given to a readable file by the phone
                             {
                                 file.Write(bytes, 0, byteCount);
                             }

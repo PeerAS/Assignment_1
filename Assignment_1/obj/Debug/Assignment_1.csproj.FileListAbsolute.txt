@@ -40,7 +40,6 @@ C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\Assig
 C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\App.g.i.cs
 C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\ErrorPage.g.i.cs
 C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\MainPage.g.i.cs
-C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\Page1.g.i.cs
 C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\Assignment_1.g.resources
 C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\Assignment_1.dll
 C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\Assignment_1.pdb
@@ -48,3 +47,5 @@ C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\XapCa
 D:\Mobile programming\Assignment_1\Assignment_1\obj\Debug\Assignment_1.csprojResolveAssemblyReference.cache
 D:\Mobile programming\Assignment_1\Assignment_1\obj\Debug\ActivityPage.g.i.cs
 D:\Mobile programming\Assignment_1\Assignment_1\obj\Debug\SendDataPage.g.i.cs
+C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\ActivityPage.g.i.cs
+C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\SendDataPage.g.i.cs

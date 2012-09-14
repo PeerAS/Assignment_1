@@ -40,9 +40,9 @@ namespace Assignment_1
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
+        {   //makes sure that when you navigate back to the page the buttons look the same
             if (PlayState.Playing == BackgroundAudioPlayer.Instance.PlayerState)
-                PlaySong.Content = "Pause Song";
+                PlaySong.Content = "Stop Song";
             else
                 PlaySong.Content = "Play Song";
 
@@ -51,8 +51,8 @@ namespace Assignment_1
         void Instance_PlayStateChanged(object sender, EventArgs e)
         {
             switch(BackgroundAudioPlayer.Instance.PlayerState)
-            {
-                case PlayState.Playing: PlaySong.Content = "Pause Song"; break;
+            {   //changes the button content
+                case PlayState.Playing: PlaySong.Content = "Stop Song"; break;
 
                 case PlayState.Paused:
                 case PlayState.Stopped:
@@ -66,7 +66,7 @@ namespace Assignment_1
         #region WebRequest
        
         private void SendData_Click(object sender, RoutedEventArgs e)
-        {
+        {   //navigates to the next page
             this.NavigationService.Navigate(new Uri("/SendDataPage.xaml", UriKind.Relative));
           
         }
@@ -77,18 +77,18 @@ namespace Assignment_1
 
         private void Download_Click(object sender, RoutedEventArgs e)
         {
-            WebClient download = new WebClient();
+            WebClient download = new WebClient();   //starts a new weclient
 
-            Uri address = new Uri("http://www.hig.no", UriKind.Absolute);
+            Uri address = new Uri("http://www.hig.no", UriKind.Absolute);   //the address to be used
 
-            download.DownloadStringAsync(address);
-
-            download.DownloadStringCompleted += new DownloadStringCompletedEventHandler(download_DownloadStringCompleted);
-
+            download.DownloadStringAsync(address);  //downloads the string from the address given
+            
+            download.DownloadStringCompleted += new DownloadStringCompletedEventHandler(download_DownloadStringCompleted); //event-handler for when the
+                                                                                                                           //download finishes
         }
 
         void download_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
-        {
+        {   //creates a splash screen with the downloaded content
             MessageBox.Show(e.Result);
         }
         #endregion
