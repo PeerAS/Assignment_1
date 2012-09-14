@@ -171,6 +171,7 @@ namespace Assignment_1
                             {
                                 file.Write(bytes, 0, byteCount);
                             }
+
                         }
 
                     }

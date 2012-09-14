@@ -1,7 +1,7 @@
 ﻿- Splash activity, button push, play song (Almost done)
 - Two different UI view layout types (Done)
-- Send data
-- Retrieve two types of data from the web(text, and something else)
+- Send data (Done)
+- Retrieve two types of data from the web(text, and something else) (DONE)
 - Display one image accessed from the HiG website (get for the frontpage) DONE!!!
 - Signed by me
 - Icon for app

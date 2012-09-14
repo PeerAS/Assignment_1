@@ -30,7 +30,7 @@ namespace Assignment_1
 
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {   //navigates to next page
-            this.NavigationService.Navigate(new Uri("/Page1.xaml", UriKind.Relative));
+            this.NavigationService.Navigate(new Uri("/ActivityPage.xaml", UriKind.Relative));
         }
 
  

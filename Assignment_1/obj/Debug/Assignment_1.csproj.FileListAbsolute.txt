@@ -4,10 +4,8 @@ D:\Mobile programming\Assignment_1\Assignment_1\Bin\Debug\Assignment_1.dll
 D:\Mobile programming\Assignment_1\Assignment_1\Bin\Debug\Assignment_1.pdb
 D:\Mobile programming\Assignment_1\Assignment_1\Bin\Debug\AppManifest.xaml
 D:\Mobile programming\Assignment_1\Assignment_1\Bin\Debug\Assignment_1.xap
-D:\Mobile programming\Assignment_1\Assignment_1\obj\Debug\ResolveAssemblyReference.cache
 D:\Mobile programming\Assignment_1\Assignment_1\obj\Debug\App.g.i.cs
 D:\Mobile programming\Assignment_1\Assignment_1\obj\Debug\MainPage.g.i.cs
-D:\Mobile programming\Assignment_1\Assignment_1\obj\Debug\Page1.g.i.cs
 D:\Mobile programming\Assignment_1\Assignment_1\obj\Debug\Assignment_1.g.resources
 D:\Mobile programming\Assignment_1\Assignment_1\obj\Debug\Assignment_1.dll
 D:\Mobile programming\Assignment_1\Assignment_1\obj\Debug\Assignment_1.pdb
@@ -47,3 +45,6 @@ C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\Assig
 C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\Assignment_1.dll
 C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\Assignment_1.pdb
 C:\Users\Peer Andreas\Documents\GitHub\Assignment_1\Assignment_1\obj\Debug\XapCacheFile.xml
+D:\Mobile programming\Assignment_1\Assignment_1\obj\Debug\Assignment_1.csprojResolveAssemblyReference.cache
+D:\Mobile programming\Assignment_1\Assignment_1\obj\Debug\ActivityPage.g.i.cs
+D:\Mobile programming\Assignment_1\Assignment_1\obj\Debug\SendDataPage.g.i.cs
